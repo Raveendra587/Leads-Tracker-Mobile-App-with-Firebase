@@ -1,0 +1,96 @@
+/* CSS Reset */
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 305px;
+    margin: 0 auto;
+}
+
+.main-class{
+    margin: 20px 10px;
+    font-weight: bold;
+}
+
+label{
+    font-size: 16px;
+    color: green;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.input-element{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid green;
+    color: black;
+    background-color: lightcyan;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    font-weight: inherit;
+    font-size: 16px;
+    color: white;
+    border: none;
+    margin-right: 5px;
+}
+
+button:hover{
+    height: 45px;
+    width: 125px;
+    color: black;
+}
+
+.save-input-button{
+    background-color: green;
+}
+
+.deleteAll-button{
+    background-color: darkred;
+}
+
+[data-title]{
+    position: relative;
+}
+[data-title]:hover::after{
+    content: attr(data-title);
+    color:white;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    font-size: 12px;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-weight: 100;
+    padding: 2px;
+}
+
+.list-items{
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 2px;
+}
+
+a{
+    display: inline-block;
+    color: green;
+    white-space: inherit;
+    font-size: 17px;
+    margin-bottom: 2px;
+    white-space: nowrap;
+}
+
+
